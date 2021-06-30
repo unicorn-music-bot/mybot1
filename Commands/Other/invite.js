@@ -5,7 +5,7 @@ const {
 module.exports.run = (client, message, args, Discord) => {
     const Link = `https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot`,
         Owner = `<@${OwnerID || "576893842058641412"}>`,
-        Developer = "TeamUnicorn";
+        TeamUnicorn = "<@838103098891173918> <@827210886421807145>";
 
     const Embed = new Discord.MessageEmbed()
         .setColor(client.Color)
@@ -14,7 +14,7 @@ module.exports.run = (client, message, args, Discord) => {
         }))
         .addField("Link", `[Click Me](${Link})`, true)
         .addField("Owner", Owner, true)
-        .addField("Developer", Developer, true)
+        .addField("TeamUnicorn", TeamUnicorn, true)
         .setFooter(`Requested By ${message.author.username}`)
         .setTimestamp();
 
